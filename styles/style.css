@@ -54,3 +54,16 @@ ul .boton a:hover {
     background-color: #062e5f;
     color: #f4ecd8;
 }
+
+@media screen and (max-width: 500px) {
+    header {
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 400px) {
+    header {
+        display: none;
+    }
+    
+}
