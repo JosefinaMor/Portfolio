@@ -1,3 +1,32 @@
-html {
-    background-color: pink;
+html, body {
+    height: 100%;
+}
+body {
+    background-color: #f4ecd8;
+    padding: 0;
+    margin: 0;
+}
+header {
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 0 29px 0 rgb(134 134 134 / 25%);
+    position: fixed;
+    top: 0;
+}
+.navBar {
+    height: 40px;   
+    background-color: #f396bf; 
+    margin: 0;
+    padding: 25px 0;
+}
+.navBar ul {
+    list-style-type: none;
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navBar ul li {
+    margin-right: 20px;
 }
