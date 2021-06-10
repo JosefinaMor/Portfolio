@@ -49,10 +49,23 @@ li a {
     width: 70px;
     padding: 10px 20px;
     border-radius: 25px;
+    text-decoration: none;
+    color: #062e5f;
 }
 ul .boton a:hover {
     background-color: #062e5f;
     color: #f4ecd8;
+}
+.conteinerPresentacion {
+    min-height: (100%-60px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 110px 40px;
+}
+h1 {
+    font-family: 'Gorditas', cursive;
+    font-size: 70px;
 }
 footer {
     margin-top: 300px;
@@ -75,6 +88,9 @@ footer ul {
 footer ul li a {
     margin: 30px 10px;
 }
+.barraMenuFooter:hover {
+    color: #ee5511;
+}
 footer p {
     text-align: center;
     margin: 40px 0;
@@ -82,7 +98,7 @@ footer p {
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     header {
         display: none;
     }
