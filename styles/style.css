@@ -86,11 +86,15 @@ footer p {
     header {
         display: none;
     }
-    
+    footer .barraMenuFooter {
+        display: none;
+    }  
 }
 @media screen and (max-width: 400px) {
     header {
         display: none;
     }
-    
+    footer .barraMenuFooter {
+        display: none;
+    }  
 }
