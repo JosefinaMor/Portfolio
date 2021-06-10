@@ -38,14 +38,19 @@ header {
     justify-content: center;
     align-items: center;
 }
-.navBar ul a {
+.navBar ul li a {
     margin: 0 20px;
     text-decoration: none;
     color: #062e5f;
 }
-.boton {
-    background-color: #ee5511;
+.boton a {
+    background-color: #ee5511;  
     height: 30px;
-    padding: 5px;
-    border-radius: 10px;
+    width: 70px;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+ul .boton a:hover {
+    background-color: #062e5f;
+    color: #f4ecd8;
 }
