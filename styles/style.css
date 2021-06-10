@@ -51,8 +51,9 @@ li a {
     border-radius: 25px;
     text-decoration: none;
     color: #062e5f;
+    margin-left: 20px;
 }
-ul .boton a:hover {
+.boton a:hover {
     background-color: #062e5f;
     color: #f4ecd8;
 }
@@ -87,10 +88,18 @@ section {
 h1 {
     font-family: 'Gorditas', cursive;
     font-size: 70px;
-    margin: 10px 0;
+    margin: 5px;
 }
 p {
     margin: 10px;
+    font-size: 30px;
+    font-weight: 800;
+}
+.descripcion {
+    margin-bottom: 40px;
+    font-size: medium;
+    color: grey;
+    font-weight: 400;
 }
 footer {
     margin-top: 300px;
