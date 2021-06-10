@@ -38,7 +38,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-.navBar ul li a {
+li a {
     margin: 0 20px;
     text-decoration: none;
     color: #062e5f;
@@ -54,6 +54,33 @@ ul .boton a:hover {
     background-color: #062e5f;
     color: #f4ecd8;
 }
+footer {
+    margin-top: 300px;
+    background-color: #ee5511;
+    padding: 40px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 20px 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul li a {
+    margin: 30px 10px;
+}
+footer p {
+    text-align: center;
+    margin: 40px 0;
+}
+
+
 
 @media screen and (max-width: 500px) {
     header {
