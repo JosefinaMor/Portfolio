@@ -56,12 +56,31 @@ ul .boton a:hover {
     background-color: #062e5f;
     color: #f4ecd8;
 }
-.conteinerPresentacion {
-    min-height: (100%-60px);
+section {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    min-height: (100%-60px);
     padding: 110px 40px;
+}
+.conteinerPresentacion {
+    width: 60%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.conteinerPresentacion div {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.conteinerPresentacion div img {
+    width: 100%;
+    min-width: 300px;
 }
 h1 {
     font-family: 'Gorditas', cursive;
