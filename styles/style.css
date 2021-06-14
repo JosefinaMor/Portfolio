@@ -101,7 +101,30 @@ p {
     color: grey;
     font-weight: 400;
 }
-
+.conocimientos {
+    background-color: #f396bf;
+    height: 100%;
+    padding: 40px 70px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.introConocimientos {
+    text-align: center;
+}
+.introConocimientos h2 {
+    font-size: 45px;
+    font-weight: 900;
+    color: #062e5f;
+}
+.introConocimientos p {
+    max-width: 400px;
+    font-size: 18px;
+    font-weight: 400;
+    color: grey;
+}
 footer {
     background-color: #ee5511;
     padding: 40px 70px;
