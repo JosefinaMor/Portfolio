@@ -64,6 +64,11 @@ section .presentacion {
     min-height: calc(100vh - 80px);
     padding: 90px 0;
 }
+.presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .conteinerPresentacion {
     padding: 0;
     margin: 0;
@@ -80,9 +85,11 @@ section .presentacion {
     align-items: flex-start;
     width: 500px;
 }
+.conteinerPresentacion div {
+    width: 500px;
+}
 .conteinerPresentacion div img {
     width: 100%;
-    max-width: 500px;
 }
 h1 {
     font-family: 'Gorditas', cursive;
@@ -101,6 +108,8 @@ p {
     font-weight: 400;
 }
 .conocimientos {
+    min-height: calc(100vh - 80px);
+    padding: 90px 0;
     background-color: #f396bf;
     height: 100%;
     padding: 60px;
@@ -208,15 +217,77 @@ footer p {
     header {
         display: none;
     }
+    .presentacion {
+        width: 100%;
+    }
+    .conteinerPresentacion {
+        max-width: 600px;
+        min-width: 400px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .conteinerPresentacion .seccionPresentacion {
+        justify-content: space-around;
+        align-items: center;
+    }
+    .conteinerPresentacion div img {
+        width: 100%;
+    }
+    .botonesConocimiento {
+        max-width: 100%;
+    }
+    .botonesConocimiento a .botonCono {
+        height: 100px;
+        width: 100px;
+    } 
+    .frase p {
+        width: 100%;
+    } 
     footer .barraMenuFooter {
         display: none;
     }  
+    footer p {
+        font-size: small;
+        font-weight: 500;
+    }
 }
 @media screen and (max-width: 400px) {
     header {
         display: none;
     }
+    .presentacion {
+        width: 100%;
+    }
+    .conteinerPresentacion {
+        max-width: 400px;
+        min-width: 100px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .conteinerPresentacion .seccionPresentacion {
+        justify-content: space-around;
+        align-items: center;
+    }
+    .conteinerPresentacion div img {
+        width: 100%;
+    }
+    .botonesConocimiento {
+        max-width: 100%;
+    }
+    .botonesConocimiento a .botonCono {
+        height: 100px;
+        width: 100px;
+    }
+    .frase p {
+        width: 100%;
+    } 
     footer .barraMenuFooter {
         display: none;
-    }  
+    } 
+    footer p {
+        font-size: small;
+        font-weight: 500;
+    } 
 }
