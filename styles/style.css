@@ -58,12 +58,12 @@ li a {
     color: #f4ecd8;
 }
 section {
-    margin-top: 84px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100%-84px);
-    padding: 110px 40px;
+    min-height: calc(100vh - 80px);
+    padding: 110px 40px 130px;
 }
 .conteinerPresentacion {
     padding: 0;
@@ -101,8 +101,8 @@ p {
     color: grey;
     font-weight: 400;
 }
+
 footer {
-    margin-top: 300px;
     background-color: #ee5511;
     padding: 40px 70px;
     display: flex;
