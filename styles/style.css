@@ -57,7 +57,7 @@ li a {
     background-color: #062e5f;
     color: #f4ecd8;
 }
-section .presentacion {
+section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,17 +156,18 @@ p {
     align-items: center;
     color: #062e5f;
 }
-.frase {
+section .frase {
+    height: fit-content;
+    min-height: fit-content;
+    padding: 0;
     margin: 0;
     background-color: #062e5f;
     color: #f4ecd8;
     padding: 110px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .frase {
     width: 100%;
+    padding: 110px 50px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -182,6 +183,14 @@ p {
 .frase h2 {
     font-size: 45px;
     font-weight: 900;
+}
+.conteinerTarjetasProyect {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 footer {
     background-color: #ee5511;
