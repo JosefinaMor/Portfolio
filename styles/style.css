@@ -57,7 +57,7 @@ li a {
     background-color: #062e5f;
     color: #f4ecd8;
 }
-section {
+section .presentacion, section .conocimientos, section .proyectos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +96,7 @@ h1 {
     font-size: 70px;
     margin: 5px;
 }
-p {
+p strong {
     margin: 10px;
     font-size: 30px;
     font-weight: 800;
@@ -107,31 +107,33 @@ p {
     color: grey;
     font-weight: 400;
 }
-.conocimientos {
-    min-height: calc(100vh - 80px);
-    padding: 90px 0;
+section .conocimientos {
     background-color: #f396bf;
     height: 100%;
     padding: 60px;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .introConocimientos {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.introConocimientos h2 {
+h2 {
     font-size: 45px;
     font-weight: 900;
     color: #062e5f;
 }
 .introConocimientos p {
-    max-width: 400px;
+    width: 50%;
     font-size: 18px;
     font-weight: 400;
     color: grey;
+    text-align: center;
 }
 .botonesConocimiento {
     max-width: 60%;
@@ -155,17 +157,11 @@ p {
     justify-content: center;
     align-items: center;
     color: #062e5f;
-}
-section .frase {
-    height: fit-content;
-    min-height: fit-content;
-    padding: 0;
+} 
+.frase {
+    color: #f4ecd8;
     margin: 0;
     background-color: #062e5f;
-    color: #f4ecd8;
-    padding: 110px 50px;
-}
-.frase {
     width: 100%;
     padding: 110px 50px;
     box-sizing: border-box;
@@ -180,17 +176,40 @@ section .frase {
     font-size: 18px;
     font-weight: 400;
 }
-.frase h2 {
+.frase .autorFrase {
     font-size: 45px;
     font-weight: 900;
+    color: #f4ecd8;
+}
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.introProyecto {
+    text-align: center;
+    width: 20%;
 }
 .conteinerTarjetasProyect {
     width: 70%;
+    padding: 20px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.tarjetaProyect {
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: -1px -1px 16px -2px rgba(0,0,0,0.10);
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
 }
 footer {
     background-color: #ee5511;
