@@ -57,7 +57,7 @@ li a {
     background-color: #062e5f;
     color: #f4ecd8;
 }
-section .presentacion, section .conocimientos, section .proyectos {
+article .presentacion, article .conocimientos, article .proyectos, article .conteinerContacto {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +107,7 @@ p strong {
     color: grey;
     font-weight: 400;
 }
-section .conocimientos {
+article .conocimientos {
     background-color: #f396bf;
     height: 100%;
     padding: 60px;
