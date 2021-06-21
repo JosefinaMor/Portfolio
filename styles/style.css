@@ -53,17 +53,12 @@ li a {
     background-color: #062e5f;
     color: #f4ecd8;
 }
-article .presentacion, article .conocimientos, article .proyectos, article .conteinerContacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 80px);
-    padding: 90px 0;
-}
 .presentacion {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: calc(100vh - 80px);
+    padding: 60px 0;
 }
 .conteinerPresentacion {
     padding: 0;
@@ -103,11 +98,10 @@ p strong {
     color: grey;
     font-weight: 400;
 }
-article .conocimientos {
+.conocimientos {
     background-color: #f396bf;
     height: 100%;
-    padding: 60px;
-    margin: 0;
+    padding: 100px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,6 +172,7 @@ h2 {
     color: #f4ecd8;
 }
 .proyectos {
+    padding: 100px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -207,23 +202,23 @@ h2 {
     text-align: center;
     text-decoration: none;
 }
+.Contacto {
+    margin: auto;
+    padding: 100px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .conteinerContacto {
     background-color: #f396bf;
-    width: 80%;
-    margin: auto;
-    padding: 40px;
+    width: 60%;
+    padding: 50px;
+    border-radius: 10px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.conteinerContacto section {
-    width: 40%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
 }
 footer {
     background-color: #ee5511;
