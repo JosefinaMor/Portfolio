@@ -38,7 +38,13 @@ li a {
     margin: 0 20px;
     text-decoration: none;
     color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
 }
+li a:focus-visible {
+    box-shadow: 0px 0px 7px #255d00;
+    outline: none;
+    }
 .boton a {
     background-color: #558c2f; 
     color: white; 
@@ -48,11 +54,16 @@ li a {
     border-radius: 25px;
     text-decoration: none;
     margin-left: 20px;
+    font-size: 20px;
 }
 .boton a:hover {
     background-color: #255e00;
     color: white;
 }
+.boton a:focus-visible {
+    box-shadow: 0px 0px 7px #255d00;
+    outline: none;
+    }
 .presentacion {
     display: flex;
     justify-content: center;
@@ -84,13 +95,14 @@ li a {
 }
 h1 {
     font-family: 'Gorditas', cursive;
-    font-size: 70px;
-    margin: 5px;
+    color: #255d00;
+    font-size: 80px;
+    margin: 0;
 }
 p strong {
-    margin: 10px;
-    font-size: 30px;
-    font-weight: 800;
+    margin: 5px;
+    font-size: 40px;
+    font-weight: 900;
 }
 .descripcion {
     margin-bottom: 40px;
@@ -123,8 +135,7 @@ h2 {
     color: grey;
     text-align: center;
 }
-.botonesConocimiento {
-    
+.botonesConocimiento { 
     max-width: 60%;
     box-sizing: border-box;
     display: flex;
@@ -133,9 +144,9 @@ h2 {
 }
 .botonesConocimiento a {
     text-decoration: none;
-}
-.botonesConocimiento a .botonCono {
     background-color: #f1f8e9;
+    color: #255d00;
+    font-size: 30px;
     height: 260px;
     width: 260px;
     border: 1px solid #bec5b7;
@@ -144,9 +155,19 @@ h2 {
     margin: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-} 
+}
+.botonesConocimiento a:hover {
+    border: 1px solid #255d00;
+}
+.botonesConocimiento a:focus-visible {
+    box-shadow: 0px 0px 7px #255d00;
+    outline: none;
+}
+.botonesConocimiento a i {
+    font-size: 100px;
+}
 .frase {
     color: #ffffff;
     margin: 0;
@@ -199,10 +220,18 @@ h2 {
     padding: 10px;
     margin: 20px;
     box-shadow: -1px -1px 16px -2px rgba(0,0,0,0.10);
+    text-decoration: none;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+.tarjetaProyect:hover {
+    border: 1px solid #255d00;
+}
+.tarjetaProyect:focus {
+    box-shadow: 0px 0px 7px #255d00;
 }
 .Contacto {
     background-color: #c5e1a5;
