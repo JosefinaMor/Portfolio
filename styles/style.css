@@ -42,7 +42,7 @@ li a {
     border-radius: 25px;
 }
 li a:focus-visible {
-    box-shadow: 0px 0px 7px #255d00;
+    border: 1px solid #255d00;
     outline: none;
     }
 .boton a {
@@ -64,7 +64,7 @@ li a:focus-visible {
     box-shadow: 0px 0px 7px #255d00;
     border: 1px solid white;
     outline: none;
-    }
+}
 .presentacion {
     display: flex;
     justify-content: center;
@@ -89,7 +89,8 @@ li a:focus-visible {
     width: 500px;
 }
 .conteinerPresentacion div {
-    width: 500px;
+    max-width: 500px;
+    min-width: 500px;
 }
 .conteinerPresentacion div img {
     width: 100%;
@@ -269,6 +270,9 @@ h2 {
     justify-content: space-between;
     align-items: flex-start;
 }
+.conteinerContacto section h2 {
+    margin: 20px 0;
+}
 .conteinerContacto section p {
    max-width: 400px;
    margin: 20px 0;
@@ -293,6 +297,60 @@ h2 {
     box-sizing: border-box;
     font-size: 25px;
     margin-right: 10px;
+}
+.conteinerContacto section form {
+    max-width: 450px;
+    box-sizing: border-box;
+}
+form div {
+    margin: 20px 0;
+}
+form .nombreApellido {
+    display: flex;
+    justify-content: space-between;
+}
+form div label input {
+    margin-top: 10px;
+   width: 180px;
+   border-radius: 20px;
+    background-color: #ffffff;
+    border: 1px solid #255d00;
+    padding: 10px 15px;
+    display: block;
+    outline: none;
+}
+form .mail label input {
+    width: 400px;
+}
+form .mensaje label textarea {
+    margin-top: 10px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 1px solid #255d00;
+    padding: 10px 15px;
+    display: block;
+    outline: none;
+}
+button {
+    background-color: #255e00; 
+    color: white; 
+    height: 30px;
+    width: 70px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+button:hover {
+    background-color: #558c2f;
+    color: white;
+}
+button:focus-visible {
+    box-shadow: 0px 0px 7px #255d00;
+    border: 1px solid white;
+    outline: none;
 }
 footer {
     color: white;
