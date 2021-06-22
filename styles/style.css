@@ -335,12 +335,10 @@ form .mensaje label textarea {
 button {
     background-color: #255e00; 
     color: white; 
-    height: 30px;
-    width: 70px;
+    border: none;
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
-    margin-left: 20px;
     font-size: 20px;
 }
 button:hover {
