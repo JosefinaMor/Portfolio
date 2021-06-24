@@ -186,7 +186,7 @@ h2 {
 }
 .frase p {
     width: 60%;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
 }
 .autorFrase {
@@ -440,8 +440,18 @@ footer p {
     .botonesConocimiento a i {
         font-size: 100px;
     }
+    .frase i {
+        font-size: 75px;
+        margin-bottom: 40px;
+    }
     .frase p {
         width: 100%;
+        font-size: 18px;
+    }
+    .autorFrase {
+        font-size: 40px;
+        font-weight: 900;
+        color: white;
     } 
     footer .barraMenuFooter {
         display: none;
@@ -486,10 +496,21 @@ footer p {
     }
     .introConocimientos p {
         width: 80%;
+        font-size: 15px;
+    }
+    .frase i {
+        font-size: 65px;
+        margin-bottom: 30px;
     }
     .frase p {
         width: 100%;
-    } 
+        font-size: 15px;
+    }
+    .autorFrase {
+        font-size: 35px;
+        font-weight: 900;
+        color: white;
+    }
     footer .barraMenuFooter {
         display: none;
     } 
