@@ -73,7 +73,7 @@ li a:focus-visible {
     padding: 60px 0;
 }
 .conteinerPresentacion {
-    padding: 0;
+    padding: 0 40px;
     margin: 0;
     width: 100%;
     max-width: 1100px;
@@ -81,19 +81,16 @@ li a:focus-visible {
     justify-content: space-between;
     align-items: center;
 }
-.conteinerPresentacion .seccionPresentacion {
+.seccionPresentacion {
+    padding: 0 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     width: 500px;
 }
-.conteinerPresentacion div {
-    max-width: 500px;
-    min-width: 500px;
-}
-.conteinerPresentacion div img {
-    width: 100%;
+.seccionPresentacion img {
+    width: 500px;
 }
 h1 {
     font-family: 'Gorditas', cursive;
@@ -192,7 +189,7 @@ h2 {
     font-size: 18px;
     font-weight: 400;
 }
-.frase .autorFrase {
+.autorFrase {
     font-size: 45px;
     font-weight: 900;
     color: white;
@@ -260,7 +257,7 @@ h2 {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .conteinerContacto section {
     width: 50%;
@@ -298,18 +295,18 @@ h2 {
     font-size: 25px;
     margin-right: 10px;
 }
-.conteinerContacto section form {
+form {
     max-width: 450px;
     box-sizing: border-box;
 }
 form div {
     margin: 20px 0;
 }
-form .nombreApellido {
+.nombreApellido {
     display: flex;
     justify-content: space-between;
 }
-form div label input {
+input {
     margin-top: 10px;
    width: 180px;
    border-radius: 20px;
@@ -319,10 +316,14 @@ form div label input {
     display: block;
     outline: none;
 }
-form .mail label input {
+input:focus-visible {
+    box-shadow: 0px 0px 7px #255d00;
+    outline: none;
+}
+.mail label input {
     width: 400px;
 }
-form .mensaje label textarea {
+textarea {
     margin-top: 10px;
     width: 400px;
     border-radius: 20px;
@@ -330,6 +331,10 @@ form .mensaje label textarea {
     border: 1px solid #255d00;
     padding: 10px 15px;
     display: block;
+    outline: none;
+}
+textarea:focus-visible {
+    box-shadow: 0px 0px 7px #255d00;
     outline: none;
 }
 button {
@@ -368,20 +373,29 @@ footer ul {
     align-items: center;
 }
 .iconos ul li a {
-    color: white;
+    color: #ffffff;
     font-size: 20px;
     width: 50px;
         height: 50px;
         border-radius: 50%;
-        border: 1px solid white;
+        border: 1px solid #ffffff;
 }
-footer ul li a:hover {
+.iconos ul li a:hover {
     color: #255d00;
-    background-color: white;
+    background-color: #ffffff;
+}
+.iconos ul li a:focus-visible {
+    color: #255d00;
+    background-color: #ffffff;
+    outline: none;
 }
 .barraMenuFooter nav ul li a{
     margin: 10px;
-    color: white;
+    color: #ffffff;
+}
+.barraMenuFooter nav ul li a:focus-visible {
+    border: 1px solid #ffffff;
+    outline: none;
 }
 footer p {
     text-align: center;
@@ -390,7 +404,7 @@ footer p {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1080px) {
     header {
         display: none;
     }
@@ -398,26 +412,34 @@ footer p {
         width: 100%;
     }
     .conteinerPresentacion {
-        max-width: 600px;
+        max-width: 900px;
         min-width: 400px;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
-    .conteinerPresentacion .seccionPresentacion {
+    .seccionPresentacion {
         justify-content: space-around;
         align-items: center;
     }
-    .conteinerPresentacion div img {
+    .seccionPresentacion img {
+        margin-top: 40px;
         width: 100%;
     }
-    .botonesConocimiento {
-        max-width: 100%;
+    .introConocimientos p {
+        width: 90%;
     }
-    .botonesConocimiento a .botonCono {
-        height: 100px;
-        width: 100px;
-    } 
+    .botonesConocimiento {
+        max-width: 90%;
+    }
+    .botonesConocimiento a {
+        height: 200px;
+        width: 200px;
+        font-size: 20px;
+    }
+    .botonesConocimiento a i {
+        font-size: 100px;
+    }
     .frase p {
         width: 100%;
     } 
@@ -429,33 +451,41 @@ footer p {
         font-weight: 500;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     header {
         display: none;
     }
     .presentacion {
-        width: 100%;
+        max-width: 100%;
     }
     .conteinerPresentacion {
-        max-width: 400px;
-        min-width: 100px;
+        max-width: 600px;
+        min-width: 200px;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
-    .conteinerPresentacion .seccionPresentacion {
+    .seccionPresentacion {
         justify-content: space-around;
         align-items: center;
     }
-    .conteinerPresentacion div img {
+    .seccionPresentacion img {
+        margin-top: 20px;
         width: 100%;
     }
     .botonesConocimiento {
-        max-width: 100%;
+        width: 100%;
     }
-    .botonesConocimiento a .botonCono {
-        height: 100px;
-        width: 100px;
+    .botonesConocimiento a {
+        height: 150px;
+        width: 150px;
+        font-size: 15px;
+    }
+    .botonesConocimiento a i {
+        font-size: 60px;
+    }
+    .introConocimientos p {
+        width: 80%;
     }
     .frase p {
         width: 100%;
