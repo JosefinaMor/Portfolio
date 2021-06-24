@@ -225,14 +225,14 @@ h2 {
     background-color: #ffffff;
     border: 1px solid #bec5b7;
     border-radius: 10px;
-    padding: 10px;
-    margin: 20px;
+    padding: 20px;
+    margin: 10px;
     box-shadow: -1px -1px 16px -2px rgba(0,0,0,0.10);
     text-decoration: none;
     color: black;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .tarjetaProyect:hover {
@@ -245,9 +245,15 @@ h2 {
     box-shadow: 0px 0px 7px #255d00;
     outline: none;
 }
-.tarjetaProyect img {
-    max-width: 350px;
+.tarjetaProyect div {
+    margin: 20px 0;
+    height: 70%;
+    width: 70%;
 }
+.tarjetaProyect div img {
+    width: 100%;
+}
+
 .Contacto {
     background-color: #c5e1a5;
     margin: auto;
