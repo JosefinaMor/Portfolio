@@ -124,6 +124,7 @@ p strong {
     align-items: center;
 }
 h2 {
+    font-family: 'Gorditas', cursive;
     font-size: 45px;
     font-weight: 900;
 }
@@ -252,6 +253,7 @@ h2 {
 .conteinerContacto {
     background-color: #f1f8e9;
     width: 60%;
+    min-width: 900px;
     padding: 50px;
     border-radius: 10px;
     box-sizing: border-box;
@@ -260,7 +262,8 @@ h2 {
     align-items: flex-start;
 }
 .conteinerContacto section {
-    width: 50%;
+    width: 500px;
+    padding-right: 30px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -296,20 +299,24 @@ h2 {
     margin-right: 10px;
 }
 form {
-    max-width: 450px;
+    width: 100%;
     box-sizing: border-box;
 }
 form div {
     margin: 20px 0;
 }
 .nombreApellido {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
+.nombreApellido label {
+    width: 45%;
+}
 input {
-    margin-top: 10px;
-   width: 180px;
-   border-radius: 20px;
+    margin: 10px 10px 0 0;
+    width: 100%;
+    border-radius: 20px;
     background-color: #ffffff;
     border: 1px solid #255d00;
     padding: 10px 15px;
@@ -320,12 +327,12 @@ input:focus-visible {
     box-shadow: 0px 0px 7px #255d00;
     outline: none;
 }
-.mail label input {
-    width: 400px;
+.mail label {
+    width: 100%;
 }
 textarea {
     margin-top: 10px;
-    width: 400px;
+    width: 100%;
     border-radius: 20px;
     background-color: #ffffff;
     border: 1px solid #255d00;
@@ -453,6 +460,25 @@ footer p {
         font-weight: 900;
         color: white;
     } 
+    .Contacto {
+        background-color: #f1f8e9;
+    }
+    .conteinerContacto {
+        flex-direction: column;
+        width: 100%;
+        max-width: 1080px;
+    }
+    .conteinerContacto section {
+        width: 100%;
+        padding: 30px;
+    }
+    .conteinerContacto section p {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+    .linkContacto p {
+         width: 100%;
+    }
     footer .barraMenuFooter {
         display: none;
     }  
