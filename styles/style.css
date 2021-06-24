@@ -262,7 +262,7 @@ h2 {
     align-items: flex-start;
 }
 .conteinerContacto section {
-    width: 500px;
+    width: 50%;
     padding-right: 30px;
     box-sizing: border-box;
     display: flex;
@@ -320,7 +320,6 @@ input {
     background-color: #ffffff;
     border: 1px solid #255d00;
     padding: 10px 15px;
-    display: block;
     outline: none;
 }
 input:focus-visible {
@@ -337,7 +336,6 @@ textarea {
     background-color: #ffffff;
     border: 1px solid #255d00;
     padding: 10px 15px;
-    display: block;
     outline: none;
 }
 textarea:focus-visible {
@@ -462,23 +460,40 @@ footer p {
     } 
     .Contacto {
         background-color: #f1f8e9;
+        width: 100%;
+        padding: 30px;
     }
     .conteinerContacto {
         flex-direction: column;
-        width: 100%;
-        max-width: 1080px;
+        width: 90%;
+        min-width: 200px;
     }
     .conteinerContacto section {
         width: 100%;
         padding: 30px;
     }
     .conteinerContacto section p {
-        max-width: 100%;
+        max-width: none;
+        width: 100%;
         margin: 20px 0;
     }
     .linkContacto p {
          width: 100%;
     }
+    .linkContacto ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+   }
+   .linkContacto ul li {
+    width: 50%;
+    margin: 10px 0;
+    display: flex;
+}
+   form {
+       width: 100%;
+   }
     footer .barraMenuFooter {
         display: none;
     }  
@@ -537,6 +552,29 @@ footer p {
         font-weight: 900;
         color: white;
     }
+    .Contacto {
+        width: 100%;
+        min-width: 200px;
+        background-color: #f1f8e9;
+    }
+    .conteinerContacto {
+        flex-direction: column;
+        max-width: none;
+        width: 100%;
+    }
+    .conteinerContacto section {
+        width: 100%;
+        min-width: 200px;
+        padding: 30px;
+    }
+    .conteinerContacto section p {
+        max-width: none;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .linkContacto p {
+        width: 100%;
+   }
     footer .barraMenuFooter {
         display: none;
     } 
