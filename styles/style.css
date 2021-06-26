@@ -1,5 +1,7 @@
+* {
+    border: 1px solid red;
+}
 body {
-    background-color: #f1f8e9;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -55,6 +57,7 @@ li a:focus-visible {
     text-decoration: none;
     margin-left: 20px;
     font-size: 20px;
+    transition: 0.2s;
 }
 .boton a:hover {
     background-color: #558c2f;
@@ -76,13 +79,13 @@ li a:focus-visible {
     padding: 0 40px;
     margin: 0;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .seccionPresentacion {
-    padding: 0 40px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -111,7 +114,6 @@ p strong {
 }
 .conocimientos {
     background-color: #c5e1a5;
-    padding: 100px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,6 +159,7 @@ h2 {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    transition: 0.2s;
 }
 .botonesConocimiento a:hover {
     border: 1px solid #255d00;
@@ -173,7 +176,7 @@ h2 {
     margin: 0;
     background-color: #255d00;
     width: 100%;
-    padding: 110px 50px;
+    padding: 110px 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -192,9 +195,23 @@ h2 {
 }
 .autorFrase {
     text-decoration: none;
+    padding: 5px;
+    margin-top: 20px;
     font-size: 45px;
     font-weight: 900;
     color: white;
+    transition: 0.2s;
+}
+.autorFrase h2 {
+    margin: 5px;
+}
+.autorFrase:hover {
+    color: #f1f8e9;
+}
+.autorFrase:focus-visible {
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    outline: none;
 }
 .conteinerProyectos {
     padding: 100px 0;
@@ -236,6 +253,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.2s;
 }
 .tarjetaProyect:hover {
     border: 1px solid #255d00;
@@ -277,8 +295,7 @@ h2 {
     align-items: flex-start;
 }
 .conteinerContacto section {
-    width: 50%;
-    padding-right: 30px;
+    width: 45%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -314,6 +331,7 @@ h2 {
     margin-right: 10px;
 }
 form {
+    margin: 0;
     width: 100%;
     box-sizing: border-box;
 }
@@ -321,16 +339,16 @@ form div {
     margin: 20px 0;
 }
 .nombreApellido {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
 }
 .nombreApellido label {
-    width: 45%;
+    width: 50%;
 }
 input {
     margin: 10px 10px 0 0;
-    width: 100%;
+    width: 90%;
     border-radius: 20px;
     background-color: #ffffff;
     border: 1px solid #255d00;
@@ -341,12 +359,9 @@ input:focus-visible {
     box-shadow: 0px 0px 7px #255d00;
     outline: none;
 }
-.mail label {
-    width: 100%;
-}
 textarea {
     margin-top: 10px;
-    width: 100%;
+    width: 90%;
     border-radius: 20px;
     background-color: #ffffff;
     border: 1px solid #255d00;
@@ -365,6 +380,7 @@ button {
     border-radius: 25px;
     text-decoration: none;
     font-size: 20px;
+    transition: 0.2s;
 }
 button:hover {
     background-color: #558c2f;
@@ -396,9 +412,10 @@ footer ul {
     color: #ffffff;
     font-size: 20px;
     width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        border: 1px solid #ffffff;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    transition: 0.2s;
 }
 .iconos ul li a:hover {
     color: #255d00;
@@ -432,8 +449,9 @@ footer p {
         width: 100%;
     }
     .conteinerPresentacion {
-        max-width: 900px;
-        min-width: 400px;
+        max-width: none;
+        min-width: none;
+        width: 100%;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -536,8 +554,9 @@ footer p {
         max-width: 100%;
     }
     .conteinerPresentacion {
-        max-width: 600px;
-        min-width: 200px;
+        max-width: none;
+        min-width: none;
+        width: 100%;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
