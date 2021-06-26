@@ -19,6 +19,7 @@ header {
 }
 .conteinerMenu {
     width: 55%;
+    max-width: 1100px;
     box-sizing: border-box; 
     display: flex;
     justify-content: flex-end;
@@ -49,30 +50,28 @@ li a:focus-visible {
     }
 .boton a {
     background-color: #255e00; 
-    color: white; 
-    height: 30px;
-    width: 70px;
+    color: #ffffff; 
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
-    margin-left: 20px;
     font-size: 20px;
     transition: 0.2s;
 }
 .boton a:hover {
     background-color: #558c2f;
-    color: white;
+    color: #ffffff;
 }
 .boton a:focus-visible {
     box-shadow: 0px 0px 7px #255d00;
-    border: 1px solid white;
+    border: 1px solid #ffffff;
     outline: none;
 }
 .presentacion {
+    background-color: #f1f8e9; 
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 60px);
     padding: 60px 0;
 }
 .conteinerPresentacion {
@@ -84,16 +83,19 @@ li a:focus-visible {
     justify-content: space-between;
     align-items: center;
 }
-.seccionPresentacion {
+.conteinerPresentacion div {
     padding: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    width: 500px;
+    width: 50%;
 }
-.seccionPresentacion img {
-    width: 500px;
+.imgPresentacion {
+    width: 100%;
+}
+.imgPresentacion img {
+    width: 100%;
 }
 h1 {
     font-family: 'Gorditas', cursive;
@@ -286,7 +288,6 @@ h2 {
 .conteinerContacto {
     background-color: #f1f8e9;
     width: 60%;
-    min-width: 900px;
     padding: 50px;
     border-radius: 10px;
     box-sizing: border-box;
@@ -445,22 +446,18 @@ footer p {
     header {
         display: none;
     }
-    .presentacion {
-        width: 100%;
-    }
     .conteinerPresentacion {
         max-width: none;
-        min-width: none;
         width: 100%;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
-    .seccionPresentacion {
+    .conteinerPresentacion div {
         justify-content: space-around;
         align-items: center;
     }
-    .seccionPresentacion img {
+    .imgPresentacion img {
         margin-top: 40px;
         width: 100%;
     }
@@ -505,16 +502,17 @@ footer p {
     .Contacto {
         background-color: #f1f8e9;
         width: 100%;
-        padding: 30px;
+        padding: 0;
     }
     .conteinerContacto {
         flex-direction: column;
-        width: 90%;
-        min-width: 500px;
+        width: 100%;
+        min-width: none;
+        padding: 5px;
+        border-radius: none;
     }
     .conteinerContacto section {
         width: 100%;
-        padding: 30px;
     }
     .conteinerContacto section p {
         max-width: none;
@@ -546,12 +544,9 @@ footer p {
         font-weight: 500;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     header {
         display: none;
-    }
-    .presentacion {
-        max-width: 100%;
     }
     .conteinerPresentacion {
         max-width: none;
@@ -565,7 +560,10 @@ footer p {
         justify-content: space-around;
         align-items: center;
     }
-    .seccionPresentacion img {
+    .imgPresentacion {
+        width: 100%;
+    }
+    .imgPresentacion img {
         margin-top: 20px;
         width: 100%;
     }
@@ -604,12 +602,16 @@ footer p {
     }
     .conteinerContacto {
         flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
         width: 100%;
-        min-width: 100px;
+        min-width: none;
+        padding: 5px;
     }
     .conteinerContacto section {
         width: 100%;
         padding: 10px;
+        margin-top: 20px;
     }
     .conteinerContacto section p {
         max-width: none;
