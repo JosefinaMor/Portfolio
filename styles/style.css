@@ -526,12 +526,13 @@ footer p {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+    justify-content: space-between;
    }
    .linkContacto ul li {
-    width: 50%;
-    margin: 10px 0;
+    width: 40%;
     display: flex;
+    justify-content: flex-start;
+    margin: 0;
     }
    form {
        width: 100%;
@@ -625,7 +626,14 @@ footer p {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+       justify-content: flex-start;
+   }
+   .linkContacto ul li {
+       width: 45%;
+       margin: 0;
+   }
+   .linkContacto ul li a {
+       display: none;
    }
     footer .barraMenuFooter {
         display: none;
