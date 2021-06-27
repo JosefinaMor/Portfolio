@@ -111,7 +111,7 @@ p strong {
 .descripcion {
     margin-bottom: 40px;
     font-size: medium;
-    color: grey;
+    color: black;
     font-weight: 400;
 }
 .conocimientos {
@@ -316,7 +316,6 @@ h2 {
     height: 200px;
     list-style: none;
     padding: 0;
-    display: block;
 }
 .linkContacto ul li {
     margin: 20px 0;
@@ -413,10 +412,7 @@ footer ul {
 .iconos ul li a {
     color: #ffffff;
     font-size: 20px;
-    width: 50px;
-    height: 50px;
     border-radius: 50%;
-    border: 1px solid #ffffff;
     transition: 0.2s;
 }
 .iconos ul li a:hover {
@@ -447,12 +443,27 @@ footer p {
     header {
         display: none;
     }
+    .presentacion {
+        width: 100%;
+    }
     .conteinerPresentacion {
         max-width: none;
         width: 100%;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        padding: 0;
+    }
+    .conteinerPresentacion div {
+        width: 100%;
+        padding: 0;
+    }
+    
+    h1 {
+        font-size: 70px;
+    }
+    .descripcion {
+        text-align: center;
     }
     .conteinerPresentacion div {
         justify-content: space-around;
@@ -527,7 +538,7 @@ footer p {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
    }
    .linkContacto ul li {
     width: 40%;
@@ -550,24 +561,41 @@ footer p {
     header {
         display: none;
     }
+    .presentacion {
+        width: 100%;
+    }
     .conteinerPresentacion {
         max-width: none;
         min-width: none;
+        padding: 0;
         width: 100%;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
+    .conteinerPresentacion div {
+        width: 100%;
+        padding: 0;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    .descripcion {
+        text-align: center;
+    }
     .seccionPresentacion {
         justify-content: space-around;
         align-items: center;
+        width: 100%;
     }
     .imgPresentacion {
         width: 100%;
+        min-width: 300px;
     }
     .imgPresentacion img {
         margin-top: 20px;
         width: 100%;
+        
     }
     .botonesConocimiento {
         width: 100%;
@@ -610,7 +638,7 @@ footer p {
         justify-content: center;
     }
     .tarjetaProyect {
-        with: 300px;
+        width: 300px;
         min-width: none;
     }
     .Contacto {
@@ -641,20 +669,21 @@ footer p {
     }
     .linkContacto ul {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-       justify-content: flex-start;
+        margin: 0;
    }
    .linkContacto ul li {
-       width: 45%;
+       width: 100%;
        margin: 0;
    }
    .linkContacto ul li a {
-       display: none;
-   }
+    margin: 0;
+}
     footer .barraMenuFooter {
         display: none;
     } 
+    .iconos ul li a {
+        margin: 0;
+    }
     footer p {
         font-size: small;
         font-weight: 500;
