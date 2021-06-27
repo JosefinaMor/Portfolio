@@ -1,32 +1,29 @@
-* {
-    border: 1px solid red;
+*{
+    box-sizing: border-box;
 }
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 header {
-    height: auto; 
-    background-color: #f1f8e9; 
-    box-shadow: 0 0 29px 0 rgb(134 134 134 / 25%);
     margin: 0;
+    background-color: #f1f8e9;
     height: 90px;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
+    width: 100%;      
+    box-shadow: 0 0 29px 0 rgb(134 134 134 / 25%);       
     display: flex;
     justify-content: center;
+    position: fixed;
+    z-index: 1;   
 }
 .conteinerMenu {
     width: 60%;
     max-width: 850px;
-    box-sizing: border-box; 
     display: flex;
     justify-content: flex-end;
 }
 .navBar {
     width: 70%;
-    box-sizing: border-box;
     display: flex;
     justify-content: flex-end;
 }
@@ -37,6 +34,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .navBar ul li a {
     width: 20%;
@@ -44,18 +42,27 @@ header {
     color: #000000;
     padding: 10px 20px;
     border-radius: 25px;
+    border: 1px solid #f1f8e9;
+    /*todos los border duplicados y redundantes en el codigo es una medida desesperadsa (jaja) 
+    porque se me movian los demas elemntos y como use muchas medidas con porentajes no se me 
+    arreglaba con box-sizing:border-box, entonces los volvi a copiar y les puse el mismo color 
+    de fondo pero creo que eso esta mal*/
+    
 }
 .navBar ul li a:focus-visible {
     border: 1px solid #255d00;
     outline: none;
     }
-
+.navBar ul .boton a {
+    color: #ffffff;
+}
 .boton a {
     background-color: #255e00; 
     color: #ffffff; 
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
+    border: 1px solid #255d00;
     font-size: 20px;
     transition: 0.2s;
 }
@@ -144,7 +151,6 @@ h2 {
 }
 .botonesConocimiento { 
     width: 60%;
-    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -177,12 +183,11 @@ h2 {
     font-size: 100px;
 }
 .frase {
-    color: white;
+    color: #ffffff;
     margin: 0;
     background-color: #255d00;
     width: 100%;
     padding: 110px 0;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,11 +209,9 @@ h2 {
     margin-top: 20px;
     font-size: 45px;
     font-weight: 900;
-    color: white;
+    color: #ffffff;
     transition: 0.2s;
-}
-.autorFrase h2 {
-    margin: 5px;
+    border: 1px solid #255d00;
 }
 .autorFrase:hover {
     color: #f1f8e9;
@@ -226,7 +229,6 @@ h2 {
 }
 .proyectos {
     max-width: 1100px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -283,7 +285,6 @@ h2 {
 .Contacto {
     background-color: #c5e1a5;
     padding: 200px 0;
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,14 +295,12 @@ h2 {
     min-width: 850px;
     padding: 50px;
     border-radius: 10px;
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 .conteinerContacto section {
     width: 45%;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -320,7 +319,7 @@ h2 {
     padding: 0;
 }
 .linkContacto ul li {
-    margin: 10px;
+    margin: 15px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -330,18 +329,22 @@ h2 {
     text-decoration: none;
     color: #000000;
     font-size: 20px;
-    padding: 5px;
+    border-radius: 25px;
+    border: 1px solid #f1f8e9;
+    padding: 10px;
 }
+.linkContacto ul li a:focus-visible {
+    border: 1px solid #255d00;
+    outline: none;
+    }
 .linkContacto ul li a i {
     color: #255d00;
-    box-sizing: border-box;
     font-size: 25px;
     margin-right: 10px;
 }
 form {
     margin: 0;
     width: 100%;
-    box-sizing: border-box;
 }
 form div {
     margin: 20px 0;
@@ -355,7 +358,7 @@ form div {
     width: 45%;
 }
 .nombreApellido label input {
-    width: 75%;
+    width: 80%;
 }
 input {
     margin: 10px 10px 0 0;
@@ -390,6 +393,7 @@ button {
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
+    border: 1px solid #255e00;
     font-size: 20px;
     transition: 0.2s;
 }
@@ -422,6 +426,9 @@ footer ul {
 .barraMenuFooter nav ul li a{
     margin: 10px;
     text-decoration: none;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #255d00;
     color: #ffffff;
 }
 .barraMenuFooter nav ul li a:focus-visible {
@@ -468,6 +475,7 @@ footer p {
     }
     .presentacion {
         width: 100%;
+        padding: 0;
     }
     .conteinerPresentacion {
         max-width: none;
@@ -516,7 +524,7 @@ footer p {
     .botonesConocimiento a {
         height: 200px;
         width: 200px;
-        font-size: 20px;
+        font-size: 18px;
     }
     .botonesConocimiento a i {
         font-size: 100px;
