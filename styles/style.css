@@ -43,8 +43,8 @@ header {
     padding: 10px 20px;
     border-radius: 25px;
     border: 1px solid #f1f8e9;
-    /*todos los border duplicados y redundantes en el codigo es una medida desesperadsa (jaja) 
-    porque se me movian los demas elemntos y como use muchas medidas con porentajes no se me 
+    /*todos los border duplicados y redundantes en el codigo es una medida desesperadsa (jaja), 
+    porque se me movian los demas elemntos y, como, use muchas medidas con porentajes no se me 
     arreglaba con box-sizing:border-box, entonces los volvi a copiar y les puse el mismo color 
     de fondo pero creo que eso esta mal*/
     
@@ -355,7 +355,7 @@ form div {
     justify-content: space-between;
 }
 .nombreApellido label {
-    width: 45%;
+    width: 50%;
 }
 .nombreApellido label input {
     width: 80%;
