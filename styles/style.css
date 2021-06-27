@@ -10,7 +10,7 @@ header {
     background-color: #f1f8e9; 
     box-shadow: 0 0 29px 0 rgb(134 134 134 / 25%);
     margin: 0;
-    padding: 25px 0;
+    height: 90px;
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -18,36 +18,38 @@ header {
     justify-content: center;
 }
 .conteinerMenu {
-    width: 55%;
-    max-width: 1100px;
+    width: 60%;
+    max-width: 850px;
     box-sizing: border-box; 
     display: flex;
     justify-content: flex-end;
 }
 .navBar {
+    width: 70%;
     box-sizing: border-box;
     display: flex;
     justify-content: flex-end;
 }
 .navBar ul { 
     list-style-type: none;
-    margin: 10px;
+    width: 100%;
     font-size: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-li a {
-    margin: 0 20px;
+.navBar ul li a {
+    width: 20%;
     text-decoration: none;
-    color: black;
+    color: #000000;
     padding: 10px 20px;
     border-radius: 25px;
 }
-li a:focus-visible {
+.navBar ul li a:focus-visible {
     border: 1px solid #255d00;
     outline: none;
     }
+
 .boton a {
     background-color: #255e00; 
     color: #ffffff; 
@@ -97,24 +99,25 @@ li a:focus-visible {
 .imgPresentacion img {
     width: 100%;
 }
+p strong {
+    margin: 5px;
+    font-size: 40px;
+    font-weight: 900;
+}
 h1 {
     font-family: 'Gorditas', cursive;
     color: #255d00;
     font-size: 80px;
     margin: 0;
 }
-p strong {
-    margin: 5px;
-    font-size: 40px;
-    font-weight: 900;
-}
 .descripcion {
     margin-bottom: 40px;
     font-size: medium;
-    color: black;
+    color: #000000;
     font-weight: 400;
 }
 .conocimientos {
+    padding: 70px 0;
     background-color: #c5e1a5;
     display: flex;
     flex-direction: column;
@@ -136,11 +139,11 @@ h2 {
     width: 50%;
     font-size: 18px;
     font-weight: 400;
-    color: grey;
+    color: #000000;
     text-align: center;
 }
 .botonesConocimiento { 
-    max-width: 60%;
+    width: 60%;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -251,7 +254,7 @@ h2 {
     margin: 10px;
     box-shadow: -1px -1px 16px -2px rgba(0,0,0,0.10);
     text-decoration: none;
-    color: black;
+    color: #000000;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -313,16 +316,20 @@ h2 {
 }
 .linkContacto ul {
     width: 100%;
-    height: 200px;
     list-style: none;
     padding: 0;
 }
 .linkContacto ul li {
-    margin: 20px 0;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .linkContacto ul li a {
     box-sizing: border-box;
-    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
     padding: 5px;
 }
 .linkContacto ul li a i {
@@ -388,17 +395,17 @@ button {
 }
 button:hover {
     background-color: #558c2f;
-    color: white;
+    color: #ffffff;
 }
 button:focus-visible {
     box-shadow: 0px 0px 7px #255d00;
-    border: 1px solid white;
+    border: 1px solid #ffffff;
     outline: none;
 }
 footer {
-    color: white;
+    color: #ffffff;
     background-color: #255d00;
-    padding: 40px 70px;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -412,9 +419,30 @@ footer ul {
     justify-content: space-between;
     align-items: center;
 }
+.barraMenuFooter nav ul li a{
+    margin: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.barraMenuFooter nav ul li a:focus-visible {
+    border: 1px solid #ffffff;
+    outline: none;
+}
+.iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.iconos ul {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
 .iconos ul li a {
     color: #ffffff;
     font-size: 20px;
+    padding: 10px 13px;
     border-radius: 50%;
     transition: 0.2s;
 }
@@ -425,14 +453,6 @@ footer ul {
 .iconos ul li a:focus-visible {
     color: #255d00;
     background-color: #ffffff;
-    outline: none;
-}
-.barraMenuFooter nav ul li a{
-    margin: 10px;
-    color: #ffffff;
-}
-.barraMenuFooter nav ul li a:focus-visible {
-    border: 1px solid #ffffff;
     outline: none;
 }
 footer p {
@@ -461,7 +481,10 @@ footer p {
         width: 100%;
         padding: 0;
     }
-    
+    p strong {
+        font-size: 35px;
+        font-weight: 900;
+    }
     h1 {
         font-size: 70px;
     }
@@ -474,17 +497,21 @@ footer p {
     }
     .imgPresentacion img {
         margin-top: 40px;
-        width: 100%;
+        width: 80%;
     }
     h2 {
         text-align: center;
-        font-size: 35px;
+        font-size: 43px;
+    }
+    .conocimientos {
+        width: 100%;
     }
     .introConocimientos p {
         width: 90%;
+        font-size: 15px;
     }
     .botonesConocimiento {
-        max-width: 90%;
+        width: 90%;
     }
     .botonesConocimiento a {
         height: 200px;
@@ -499,7 +526,7 @@ footer p {
         margin-bottom: 40px;
     }
     .frase p {
-        width: 100%;
+        width: 80%;
         font-size: 18px;
     }
     .autorFrase {
@@ -515,7 +542,7 @@ footer p {
         width: 100%;
     } 
     .introProyecto {
-        font-size: 12px;
+        font-size: 15px;
     }
     .conteinerTarjetasProyect {
         width: 100%;
@@ -556,6 +583,7 @@ footer p {
     justify-content: flex-start;
     margin: 0;
     }
+    
    form {
        width: 100%;
    }
@@ -566,7 +594,13 @@ footer p {
    }
     footer .barraMenuFooter {
         display: none;
-    }  
+    } 
+    .iconos {
+        width: 40%;
+    } 
+    .iconos ul {
+        width: 100%;
+    }
     footer p {
         font-size: small;
         font-weight: 500;
@@ -592,6 +626,9 @@ footer p {
         width: 100%;
         padding: 0;
     }
+    p strong {
+        font-size: 30px;
+    }
     h1 {
         font-size: 60px;
     }
@@ -604,7 +641,7 @@ footer p {
         width: 100%;
     }
     .imgPresentacion {
-        width: 100%;
+        width: 90%;
         min-width: 300px;
     }
     .imgPresentacion img {
@@ -616,13 +653,14 @@ footer p {
         width: 100%;
     }
     .botonesConocimiento a {
-        height: 150px;
-        width: 150px;
+        height: 100px;
+        width: 100px;
         font-size: 15px;
     }
     .botonesConocimiento a i {
-        font-size: 60px;
+        font-size: 45px;
     }
+    
     h2 {
         text-align: center;
         font-size: 30px;
@@ -636,7 +674,7 @@ footer p {
         margin-bottom: 30px;
     }
     .frase p {
-        width: 100%;
+        width: 90%;
         font-size: 15px;
     }
     .autorFrase {
@@ -702,6 +740,12 @@ footer p {
     footer .barraMenuFooter {
         display: none;
     } 
+    .iconos {
+        width: 80%;
+    } 
+    .iconos ul {
+        width: 100%;
+    }
     .iconos ul li a {
         margin: 0;
     }
