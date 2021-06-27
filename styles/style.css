@@ -279,7 +279,6 @@ h2 {
 
 .Contacto {
     background-color: #c5e1a5;
-    margin: auto;
     padding: 200px 0;
     box-sizing: border-box;
     display: flex;
@@ -289,6 +288,7 @@ h2 {
 .conteinerContacto {
     background-color: #f1f8e9;
     width: 60%;
+    min-width: 850px;
     padding: 50px;
     border-radius: 10px;
     box-sizing: border-box;
@@ -308,7 +308,7 @@ h2 {
     margin: 20px 0;
 }
 .conteinerContacto section p {
-   max-width: 400px;
+   width: 90%;
    margin: 20px 0;
 }
 .linkContacto ul {
@@ -323,7 +323,7 @@ h2 {
 .linkContacto ul li a {
     box-sizing: border-box;
     font-size: 15px;
-    padding: 10px;
+    padding: 5px;
 }
 .linkContacto ul li a i {
     color: #255d00;
@@ -340,12 +340,15 @@ form div {
     margin: 20px 0;
 }
 .nombreApellido {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .nombreApellido label {
-    width: 50%;
+    width: 45%;
+}
+.nombreApellido label input {
+    width: 75%;
 }
 input {
     margin: 10px 10px 0 0;
@@ -439,7 +442,7 @@ footer p {
 
 
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 850px) {
     header {
         display: none;
     }
@@ -472,6 +475,10 @@ footer p {
     .imgPresentacion img {
         margin-top: 40px;
         width: 100%;
+    }
+    h2 {
+        text-align: center;
+        font-size: 35px;
     }
     .introConocimientos p {
         width: 90%;
@@ -507,6 +514,9 @@ footer p {
         text-align: center;
         width: 100%;
     } 
+    .introProyecto {
+        font-size: 12px;
+    }
     .conteinerTarjetasProyect {
         width: 100%;
         padding: 0;
@@ -519,7 +529,7 @@ footer p {
     .conteinerContacto {
         flex-direction: column;
         width: 100%;
-        min-width: none;
+        min-width: 400px;
         padding: 5px;
         border-radius: none;
     }
@@ -548,6 +558,11 @@ footer p {
     }
    form {
        width: 100%;
+   }
+   form .mail {
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
    }
     footer .barraMenuFooter {
         display: none;
@@ -608,6 +623,10 @@ footer p {
     .botonesConocimiento a i {
         font-size: 60px;
     }
+    h2 {
+        text-align: center;
+        font-size: 30px;
+    }
     .introConocimientos p {
         width: 80%;
         font-size: 15px;
@@ -632,6 +651,9 @@ footer p {
         text-align: center;
         width: 100%;
     } 
+    .introProyecto {
+        font-size: 12px;
+    } 
     .conteinerTarjetasProyect {
         width: 100%;
         padding: 0;
@@ -643,7 +665,6 @@ footer p {
     }
     .Contacto {
         background-color: #f1f8e9;
-        width: 100%;
         padding: 0;
     }
     .conteinerContacto {
@@ -651,7 +672,7 @@ footer p {
         justify-content: space-between;
         padding: 0;
         width: 100%;
-        min-width: none;
+        min-width: 200px;
         padding: 5px;
     }
     .conteinerContacto section {
