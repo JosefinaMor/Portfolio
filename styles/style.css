@@ -43,6 +43,9 @@ header {
     padding: 10px 20px;
     border-radius: 25px;
     border: 1px solid #f1f8e9;
+
+    /* Lo de abajo se arregla poniendo outline:transparent en lugar de none en el focus */
+
     /*todos los border duplicados y redundantes en el codigo es una medida desesperadsa (jaja), 
     porque se me movian los demas elemntos y, como, use muchas medidas con porentajes no se me 
     arreglaba con box-sizing:border-box, entonces los volvi a copiar y les puse el mismo color 
